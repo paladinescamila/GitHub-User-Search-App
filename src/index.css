@@ -1,1 +1,39 @@
 @import 'tailwindcss';
+
+@layer components {
+	.text-preset-1 {
+		@apply font-mono text-[26px] leading-[120%] font-bold tracking-[0px];
+	}
+
+	.text-preset-2 {
+		@apply font-mono text-[22px] leading-[140%] font-bold tracking-[0px];
+	}
+
+	.text-preset-3 {
+		@apply font-mono text-[18px] leading-[140%] font-normal tracking-[0px];
+	}
+
+	.text-preset-3-mobile {
+		@apply font-mono text-[13px] leading-[140%] font-normal tracking-[0px];
+	}
+
+	.text-preset-4 {
+		@apply font-mono text-[16px] leading-[150%] font-normal tracking-[0px];
+	}
+
+	.text-preset-5 {
+		@apply font-mono text-[16px] leading-[150%] font-bold tracking-[0px];
+	}
+
+	.text-preset-6 {
+		@apply font-mono text-[15px] leading-[150%] font-normal tracking-[0px];
+	}
+
+	.text-preset-7 {
+		@apply font-mono text-[13px] leading-[150%] font-normal tracking-[0px];
+	}
+
+	.text-preset-8 {
+		@apply font-mono text-[13px] leading-[140%] font-bold tracking-[2.5px];
+	}
+}
