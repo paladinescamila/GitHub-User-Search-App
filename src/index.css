@@ -1,6 +1,11 @@
 @import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
 
 @layer components {
+	.text-preset-0 {
+		@apply font-mono text-[26px] leading-[100%] font-bold tracking-normal;
+	}
+
 	.text-preset-1 {
 		@apply font-mono text-[26px] leading-[120%] font-bold tracking-[0px];
 	}
@@ -35,6 +40,10 @@
 
 	.text-preset-8 {
 		@apply font-mono text-[13px] leading-[140%] font-bold tracking-[2.5px];
+	}
+
+	.shadow {
+		box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
 	}
 }
 
