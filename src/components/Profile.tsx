@@ -102,7 +102,8 @@ export default function Profile() {
 						className={`text-preset-6 text-neutral-500 dark:text-neutral-0 truncate flex-1 ${
 							user.website ? 'cursor-pointer hover:underline' : ''
 						}`}
-						href={user.website}>
+						href={user.website}
+						target='_blank'>
 						{user.website || 'Not available'}
 					</a>
 				</div>
