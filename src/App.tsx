@@ -15,8 +15,8 @@ function App() {
 	}, []);
 
 	return (
-		<main className='bg-neutral-100 dark:bg-neutral-900 w-screen h-screen flex justify-center pt-10 md:pt-32.5 px-4 md:px-8'>
-			<section className='flex flex-col gap-500 w-full md:w-182.5'>
+		<main className='bg-neutral-100 dark:bg-neutral-900 w-screen h-screen flex justify-center pt-8 sm:pt-10 md:pt-32.5 px-4 md:px-8'>
+			<section className='flex flex-col gap-8 md:gap-10 w-full md:w-182.5'>
 				<Header />
 				<SearchBar />
 				{user ? <Profile /> : null}
