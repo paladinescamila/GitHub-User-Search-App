@@ -6,17 +6,17 @@ This is a solution to the [GitHub user search app challenge on Frontend Mentor](
 
 ## Links
 
--   [Solution]()
--   [Live Site](https://github-user-search-app-fm.netlify.app)
+- [Solution]()
+- [Live Site](https://github-user-search-paladinescamila.netlify.app/)
 
 ## Built with
 
--   React.js
--   TypeScript
--   TailwindCSS
+- React.js
+- TypeScript
+- TailwindCSS
 
 ## Author
 
--   Website - [camilapaladines.netlify.app](https://camilapaladines.netlify.app)
--   Frontend Mentor - [@paladinescamila](https://www.frontendmentor.io/profile/paladinescamila)
--   LinkedIn - [@paladinescamila](https://co.linkedin.com/in/paladinescamila)
+- Website - [camilapaladines.netlify.app](https://camilapaladines.netlify.app)
+- Frontend Mentor - [@paladinescamila](https://www.frontendmentor.io/profile/paladinescamila)
+- LinkedIn - [@paladinescamila](https://co.linkedin.com/in/paladinescamila)
