@@ -21,7 +21,7 @@ export default function SearchBar() {
 			<input
 				type='text'
 				placeholder='Search GitHub username…'
-				className='text-preset-3-mobile md:text-preset-3 text-neutral-500 dark:text-neutral-0 outline-0 min-w-0 bg-neutral-0 dark:bg-neutral-800 shadow dark:shadow-none rounded-2xl py-[25.5px] md:py-5.5 w-full pl-11 md:pl-17 pr-32 focus:light-outline docus:dark:dark-outline'
+				className='text-preset-3-mobile md:text-preset-3 text-neutral-500 dark:text-neutral-0 min-w-0 bg-neutral-0 dark:bg-neutral-800 shadow dark:shadow-none rounded-2xl py-[25.5px] md:py-5.5 w-full pl-11 md:pl-17 pr-32 focus:dark-outline'
 				value={search}
 				onChange={(e) => setSearch(e.target.value)}
 				onKeyPress={(e) => (e.key === 'Enter' ? onSearch() : null)}
