@@ -7,7 +7,6 @@ import OutlineContainer from './OutlineContainer';
 
 export default function SearchBar() {
 	const {search, setSearch, theme, error, onSearch} = useAppStore();
-
 	const {isMobile} = useScreenWidth();
 
 	return (

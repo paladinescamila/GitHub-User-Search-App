@@ -1,18 +1,3 @@
-interface User {
-	photo?: string;
-	name?: string;
-	joinedDate?: string;
-	username?: string;
-	bio?: string;
-	repos?: number;
-	followers?: number;
-	following?: number;
-	location?: string;
-	twitter?: string;
-	website?: string;
-	company?: string;
-}
-
 interface ResponseData {
 	login: string;
 	id: number;
@@ -48,5 +33,3 @@ interface ResponseData {
 	created_at: string;
 	updated_at: string;
 }
-
-type Theme = 'light' | 'dark';

@@ -23,7 +23,7 @@ function ProfileInfoItem({type}: {type: 'location' | 'twitter' | 'website' | 'co
 
 	const iconColor = useMemo(
 		() => (theme === 'dark' ? COLORS.neutral0 : COLORS.neutral900),
-		[theme]
+		[theme],
 	);
 
 	const link = useMemo(() => {
