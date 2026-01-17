@@ -21,26 +21,22 @@ export default function Header() {
 			) : (
 				<img src={DarkLogo} alt='GitHub User Search Logo' className='h-6.5' />
 			)}
-			<OutlineContainer className='rounded-sm'>
-				<button
-					className='flex flex-row items-center gap-2.5 md:gap-3.5 cursor-pointer group'
-					onClick={switchTheme}
-					onMouseEnter={() => setThemeButtonIsHovered(true)}
-					onMouseLeave={() => setThemeButtonIsHovered(false)}>
-					<p className='text-neutral-500 dark:text-neutral-200 group-hover:text-neutral-700 dark:group-hover:text-neutral-0 text-preset-8 uppercase'>
-						{theme === 'light' ? 'dark' : 'light'}
-					</p>
+			<OutlineContainer
+				className='rounded-sm flex flex-row items-center gap-2.5 md:gap-3.5 cursor-pointer group'
+				onClick={switchTheme}
+				onMouseEnter={() => setThemeButtonIsHovered(true)}
+				onMouseLeave={() => setThemeButtonIsHovered(false)}>
+				<p className='text-neutral-500 dark:text-neutral-200 group-hover:text-neutral-700 dark:group-hover:text-neutral-0 text-preset-8 uppercase'>
+					{theme === 'light' ? 'dark' : 'light'}
+				</p>
 
-					{theme === 'light' ? (
-						<MoonIcon
-							color={themeButtonIsHovered ? COLORS.neutral700 : COLORS.neutral500}
-						/>
-					) : (
-						<SunIcon
-							color={themeButtonIsHovered ? COLORS.neutral0 : COLORS.neutral200}
-						/>
-					)}
-				</button>
+				{theme === 'light' ? (
+					<MoonIcon
+						color={themeButtonIsHovered ? COLORS.neutral700 : COLORS.neutral500}
+					/>
+				) : (
+					<SunIcon color={themeButtonIsHovered ? COLORS.neutral0 : COLORS.neutral200} />
+				)}
 			</OutlineContainer>
 		</header>
 	);

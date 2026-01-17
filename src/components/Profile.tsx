@@ -13,12 +13,13 @@ export default function Profile() {
 			<img
 				className='w-17.5 h-17.5 md:w-29.25 md:h-29.25 rounded-full bg-neutral-0 md:row-span-4'
 				src={user.photo}
+				alt={`${user.name} profile picture`}
 			/>
 			<div className='flex flex-col md:flex-row justify-between gap-x-4 gap-y-1 overflow-hidden'>
 				<div className='flex flex-col gap-0.5 overflow-hidden'>
-					<h2 className='text-preset-1 text-neutral-700 dark:text-neutral-0 truncate'>
+					<h1 className='text-preset-1 text-neutral-700 dark:text-neutral-0 truncate'>
 						{user.name}
-					</h2>
+					</h1>
 					<a
 						className='text-preset-4 text-blue-500 dark:text-blue-300 cursor-pointer hover:underline truncate'
 						href={`https://github.com/${user.username}`}

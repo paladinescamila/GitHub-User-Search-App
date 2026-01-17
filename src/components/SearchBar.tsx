@@ -30,12 +30,10 @@ export default function SearchBar() {
 					No results
 				</p>
 			) : null}
-			<OutlineContainer className='rounded-[10px] absolute right-3 top-1/2 -translate-y-1/2'>
-				<button
-					className='text-neutral-0 text-preset-5 px-6 py-3 bg-blue-500 hover:bg-blue-300 rounded-[10px] cursor-pointer'
-					onClick={onSearch}>
-					Search
-				</button>
+			<OutlineContainer
+				className='rounded-[10px] absolute right-3 top-1/2 -translate-y-1/2 text-neutral-0 text-preset-5 px-6 py-3 bg-blue-500 hover:bg-blue-300 cursor-pointer'
+				onClick={onSearch}>
+				Search
 			</OutlineContainer>
 		</div>
 	);
