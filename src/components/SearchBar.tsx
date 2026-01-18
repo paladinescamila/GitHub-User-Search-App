@@ -16,13 +16,16 @@ export default function SearchBar() {
 
 	return (
 		<form className='relative'>
-			<label className='absolute left-3 md:left-6 top-1/2 -translate-y-1/2'>
+			<label
+				className='absolute left-3 md:left-6 top-1/2 -translate-y-1/2'
+				htmlFor='search-input'>
 				<SearchIcon
 					color={theme === 'dark' ? COLORS.blue300 : COLORS.blue500}
 					size={isMobile ? 20 : 24}
 				/>
 			</label>
 			<input
+				id='search-input'
 				type='text'
 				placeholder='Search GitHub username…'
 				aria-label='Search GitHub username'

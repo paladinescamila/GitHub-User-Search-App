@@ -25,6 +25,7 @@ export default function Header() {
 				className='rounded-sm flex flex-row items-center gap-2.5 md:gap-3.5 cursor-pointer group'
 				onClick={switchTheme}
 				type='button'
+				aria-label='Toggle theme'
 				onMouseEnter={() => setThemeButtonIsHovered(true)}
 				onMouseLeave={() => setThemeButtonIsHovered(false)}>
 				<span className='text-neutral-500 dark:text-neutral-200 group-hover:text-neutral-700 dark:group-hover:text-neutral-0 text-preset-8 uppercase'>
