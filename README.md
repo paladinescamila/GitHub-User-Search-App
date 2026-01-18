@@ -6,8 +6,8 @@ This is a solution to the [GitHub user search app challenge on Frontend Mentor](
 
 ## Links
 
-- [Solution]()
-- [Live Site](https://github-user-search-paladinescamila.netlify.app/)
+- [Solution](https://www.frontendmentor.io/solutions/github-user-search-app-GXA5vg3Mvm)
+- [Live Site](https://github-user-search-paladinescamila.netlify.app)
 
 ## Built with
 
