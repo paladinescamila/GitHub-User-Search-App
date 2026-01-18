@@ -9,6 +9,11 @@ export default function SearchBar() {
 	const {search, setSearch, theme, error, onSearch} = useAppStore();
 	const {isMobile} = useScreenWidth();
 
+	const handleClickSearch = (e: React.MouseEvent<HTMLButtonElement>) => {
+		e.preventDefault();
+		onSearch();
+	};
+
 	return (
 		<form className='relative'>
 			<label className='absolute left-3 md:left-6 top-1/2 -translate-y-1/2'>
@@ -33,7 +38,8 @@ export default function SearchBar() {
 			) : null}
 			<OutlineContainer
 				className='rounded-[10px] absolute right-3 top-1/2 -translate-y-1/2 text-neutral-0 text-preset-5 px-6 py-3 bg-blue-500 hover:bg-blue-300 cursor-pointer'
-				onClick={onSearch}>
+				onClick={handleClickSearch}
+				type='submit'>
 				Search
 			</OutlineContainer>
 		</form>

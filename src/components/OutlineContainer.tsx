@@ -25,7 +25,6 @@ export default function OutlineContainer({
 		<button
 			onClick={handleClick}
 			className={`${isOutlined ? 'light-outline dark:dark-outline' : ''} ${className || ''}`}
-			type='button'
 			{...rest}>
 			{children}
 		</button>

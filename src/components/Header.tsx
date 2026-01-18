@@ -24,11 +24,12 @@ export default function Header() {
 			<OutlineContainer
 				className='rounded-sm flex flex-row items-center gap-2.5 md:gap-3.5 cursor-pointer group'
 				onClick={switchTheme}
+				type='button'
 				onMouseEnter={() => setThemeButtonIsHovered(true)}
 				onMouseLeave={() => setThemeButtonIsHovered(false)}>
-				<p className='text-neutral-500 dark:text-neutral-200 group-hover:text-neutral-700 dark:group-hover:text-neutral-0 text-preset-8 uppercase'>
+				<span className='text-neutral-500 dark:text-neutral-200 group-hover:text-neutral-700 dark:group-hover:text-neutral-0 text-preset-8 uppercase'>
 					{theme === 'light' ? 'dark' : 'light'}
-				</p>
+				</span>
 
 				{theme === 'light' ? (
 					<MoonIcon
