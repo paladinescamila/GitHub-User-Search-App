@@ -3,7 +3,6 @@ import SearchIcon from '../assets/SearchIcon';
 import {COLORS} from '../constants/styles';
 import {useScreenWidth} from '../hooks/useScreenWidth';
 import {useAppStore} from '../stores/AppStore';
-import OutlineContainer from './OutlineContainer';
 
 export default function SearchBar() {
 	const {search, setSearch, theme, error, onSearch} = useAppStore();
@@ -29,7 +28,7 @@ export default function SearchBar() {
 				type='text'
 				placeholder='Search GitHub username…'
 				aria-label='Search GitHub username'
-				className='text-preset-3-mobile md:text-preset-3 text-neutral-500 dark:text-neutral-0 min-w-0 bg-neutral-0 dark:bg-neutral-800 shadow dark:shadow-none rounded-2xl py-[25.5px] md:py-5.5 w-full pl-11 md:pl-17 pr-32 focus:dark-outline'
+				className='text-preset-3-mobile md:text-preset-3 text-neutral-500 dark:text-neutral-0 min-w-0 bg-neutral-0 dark:bg-neutral-800 shadow dark:shadow-none rounded-2xl py-[25.5px] md:py-5.5 w-full pl-11 md:pl-17 pr-32 focus-outline'
 				value={search}
 				onChange={(e) => setSearch(e.target.value)}
 				onKeyPress={(e) => (e.key === 'Enter' ? onSearch() : null)}
@@ -39,12 +38,12 @@ export default function SearchBar() {
 					No results
 				</p>
 			) : null}
-			<OutlineContainer
-				className='rounded-[10px] absolute right-3 top-1/2 -translate-y-1/2 text-neutral-0 text-preset-5 px-6 py-3 bg-blue-500 hover:bg-blue-300 cursor-pointer'
+			<button
+				className='rounded-[10px] absolute right-3 top-1/2 -translate-y-1/2 text-neutral-0 text-preset-5 px-6 py-3 bg-blue-500 hover:bg-blue-300 cursor-pointer focus-outline'
 				onClick={handleClickSearch}
 				type='submit'>
 				Search
-			</OutlineContainer>
+			</button>
 		</form>
 	);
 }
